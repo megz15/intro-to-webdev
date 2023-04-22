@@ -21,15 +21,13 @@
 					<br><h3 class="glow">An Introduction to</h3>
 					<object data="./assets/webdev.svg" width="40%"></object>
 					<h3 class="glow">Web Development</h3>
-					<small><h4>Created by <a href="https://github.com/megz15">Meghraj Goswami</a><h4></small>
+					<small><h4>Created by <a target="_blank" href="https://github.com/megz15">Meghraj Goswami</a><h4></small>
 				</section>
 				
 				<section>
 					<h3>What is Web Dev?</h3>
 					<p>
 						Web Development is the process of developing a website or a web application.
-					</p><p>
-						It typically involves applying a combination of different technologies called stacks, which include programming languages, databases, frameworks, among other stuff to build and deploy interactive and dynamic websites.
 					</p>
 				</section>
 
@@ -63,10 +61,10 @@
 								<li>Mobile apps using <b>React Native</b>, <b>Ionic</b></li>
 								<li>Desktop apps like VSCode using <b>Electron</b>, <b>Tauri</b></li>
 								<li>Progressive Web Apps</li>
-								<li>2D Graphics using <b><a href="https://p5js.org/examples/simulate-game-of-life.html">p5.js</a></b></li>
-								<li>3D Graphics using <b><a href="https://threejs.org/examples">three.js</a></b></li>
-								<li>Games using game engines <b><a href="https://kaboomjs.com/play?demo=rpg">kaboom.js</a></b></li>
-								<li>3D Physics Simulation using <b><a href="https://rawcdn.githack.com/kripken/ammo.js/99d0ec0b1e26d7ccc13e013caba8e8a5c98d953b/examples/webgl_demo_vehicle/index.html">ammo.js</a></b>, <b>cannon.js</b></li>
+								<li>2D Graphics using <b><a target="_blank" href="https://p5js.org/examples/simulate-game-of-life.html">p5.js</a></b></li>
+								<li>3D Graphics using <b><a target="_blank" href="https://threejs.org/examples">three.js</a></b></li>
+								<li>Games using game engines <b><a target="_blank" href="https://kaboomjs.com/play?demo=rpg">kaboom.js</a></b></li>
+								<li>3D Physics Simulation using <b><a target="_blank" href="https://rawcdn.githack.com/kripken/ammo.js/99d0ec0b1e26d7ccc13e013caba8e8a5c98d953b/examples/webgl_demo_vehicle/index.html">ammo.js</a></b>, <b>cannon.js</b></li>
 							</ul>
 						</p>
 					</section>
@@ -83,7 +81,7 @@
 									</ul>
 								<li>Create videos using <b>remotion</b></li>
 								<li>Create programming languages like <b>bhailang</b></li>
-								<li>Fun shit like <b><a href="https://win11.blueedge.me">win11.blueedge.me</a></b>, or even a fully functional virtual <b>Windows95</b> and <b>Macintosh</b> system in an electron app</li>
+								<li>Fun shit like <b><a target="_blank" href="https://win11.blueedge.me">win11.blueedge.me</a></b>, or even a fully functional virtual <b>Windows95</b> and <b>Macintosh</b> system in an electron app</li>
 							</ul>
 						</p>
 					</section>
@@ -103,7 +101,7 @@
 						<h3>Cool portfolio websites</h3>
 					</section>
 					<section data-background-iframe="https://bruno-simon.com/" data-background-interactive></section>
-					<section data-background-iframe="http://www.rleonardi.com/interactive-resume/" data-background-interactive></section>
+					<section data-background-iframe="https://www.rleonardi.com/interactive-resume/" data-background-interactive></section>
 				</section>
 
 				<section>
@@ -234,12 +232,16 @@
 						</p>
 					</section>
 
+					<section data-background-iframe="https://getbootstrap.com/docs/4.0/examples/pricing/" data-background-interactive></section>
+
 					<section>
 						<h3>Bulma</h3>
 						<p>
 							Bulma is designed to be lightweight and easy to use, with a simple and intuitive class names and a variety of easily customizable pre-built CSS components.
 						</p>
 					</section>
+
+					<section data-background-iframe="https://bulma.io/expo/" data-background-interactive></section>
 
 					<section>
 						<h3>Tailwind</h3>
@@ -250,6 +252,8 @@
 							It includes a wide range of pre-built utility classes for typography, spacing, layout, colors, borders, and more.
 						</p>
 					</section>
+
+					<section data-background-iframe="https://tailwindcss.com/showcase" data-background-interactive></section>
 				</section>
 
 				<section>
@@ -267,12 +271,33 @@
 		}
 
 		function changeText() {
+			let n1 = Math.floor(Math.random() * 20);
+			let n2 = Math.floor(Math.random() * 20);
 			var heading = document.getElementById("heading");
-			heading.innerHTML = `5 + 15 = ${addNumbers(5, 15)}`;
+			heading.innerHTML = `${n1} + ${n2} = ${addNumbers(n1, n2)}`;
 		}
 
 		changeText();
 						</code></pre>
+					</section>
+					<section>
+						<h1 id="heading">Hello!</h1>
+						<button onclick="changeText()"><h1 style="color:#111111;padding:0.5em 1em">Click me!</h1></button>
+						<script>
+							function addNumbers(num1, num2) {
+								var sum = num1 + num2;
+								return sum;
+							}
+					
+							function changeText() {
+								let n1 = Math.floor(Math.random() * 20);
+								let n2 = Math.floor(Math.random() * 20);
+								var heading = document.getElementById("heading");
+								heading.innerHTML = `${n1} + ${n2} = ${addNumbers(n1, n2)}`;
+							}
+					
+							// changeText();
+						</script>
 					</section>
 				</section>
 
@@ -380,12 +405,14 @@
 						<ul>
 							<li>Learning by doing - the best method</li>
 							<li>Reading the documentation directly</li>
-							<li>Taking short well structured courses like the ones by <a href="https://www.theodinproject.com/">The Odin Project</a></li>
-							<li>Referring to sites like <a href="https://www.w3schools.com/">W3Schools</a>, <a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a>, <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>, <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+							<li>Taking short well structured courses like the ones by <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a></li>
+							<li>Referring to sites like <a target="_blank" href="https://www.w3schools.com/">W3Schools</a>, <a target="_blank" href="https://www.geeksforgeeks.org/">GeeksForGeeks</a>, <a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp</a>, <a target="_blank" href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
 							<li>Staying up-to-date with the latest technologies and best practices</li>
 						</ul>
 					</section>
 				</section>
+
+				<section>Fin</section>
 			</div>
 		</div>
 
